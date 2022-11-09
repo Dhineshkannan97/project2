@@ -8,15 +8,15 @@ import java.util.ArrayList;
 
 public class TestSerial implements Serializable {
     static ArrayList<Data> list = new ArrayList<>();
-    String s;
-    String loc = "C:\\Users\\Dhinesh Kannan\\IdeaProjects\\project2\\src\\main\\resources\\z.txt";
+    static String s;
+    static String loc = "C:\\Users\\Dhinesh Kannan\\IdeaProjects\\project2\\src\\main\\resources\\e.txt";
     final String url = "jdbc:postgresql://localhost:5432/test";
     final String user = "postgres";
     final String password = "123456";
     Connection conn = DriverManager.getConnection(url, user, password);
     Statement stmt = conn.createStatement();
 
-    public TestSerial(ArrayList<Data> list) throws SQLException {
+    public TestSerial() throws SQLException {
     }
 
     public Connection connect() throws SQLException {
@@ -42,28 +42,20 @@ public class TestSerial implements Serializable {
         while (rs.next()) {
             list.add(new Data(rs.getInt("age"), rs.getInt("id"), rs.getString("name"), rs.getFloat("salary"), rs.getString("address")));
         }
-        for (Data data : list) {
-
-            s = data.id + ":" + data.age + ":" + data.salary + ":" + data.name + ":" + data.address;
-        }
-        System.out.println(s);
     }
 
     public void convertFile() throws Exception {
-
-        TestSerial ser = new TestSerial(list);
         FileOutputStream file = new FileOutputStream(loc);
         ObjectOutputStream out = new ObjectOutputStream(file);
-        out.writeObject(ser);
+        out.writeObject(list.get(0));
         out.flush();
         out.close();
         System.out.println("success");
     }
 
     public static void main(String[] args) throws Exception {
-        TestSerial ser = new TestSerial(list);
-
-        ser.connect();
+        TestSerial ser = new TestSerial();
+//        ser.connect();
         ser.insert();
         ser.convertFile();
     }

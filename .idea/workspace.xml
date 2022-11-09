@@ -5,16 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7fdb46a-a85d-4dfc-9fa3-f1bc2072a0fd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Serial/Data.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Serial/TestSerial.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/z.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/e.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Serial/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Serial/Data.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Serial/TestSerial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Serial/TestSerial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/z.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +46,19 @@
   }
 }</component>
   <component name="RunManager" selected="Application.TestSerial">
+    <configuration name="Data" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Serial.Data" />
+      <module name="project2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Serial.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestSerial" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Serial.TestSerial" />
       <module name="project2" />
@@ -77,9 +85,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="project2 [clean,install]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="install" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Data" />
+      <item itemvalue="Application.TestSerial" />
+      <item itemvalue="Application.TestsSerial" />
+      <item itemvalue="Maven.project2 [clean,install]" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.TestSerial" />
+        <item itemvalue="Application.Data" />
         <item itemvalue="Application.TestsSerial" />
       </list>
     </recent_temporary>
@@ -108,5 +149,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.io.NotSerializableException" package="java.io" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
