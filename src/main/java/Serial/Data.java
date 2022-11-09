@@ -4,10 +4,10 @@ import java.io.Serializable;
 import java.sql.SQLException;
 public class Data implements Serializable {
     public int age;
-    int id;
-    String name;
-    float salary;
-    String address;
+    public int id;
+   public String name;
+   public float salary;
+    public String address;
 
     public Data(int age, int id, String name, float salary, String address) throws SQLException {
         this.age = age;
